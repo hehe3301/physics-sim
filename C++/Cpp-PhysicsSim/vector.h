@@ -40,7 +40,7 @@ extern "C" {
      * @return - A new initalised Vector struct
      */
     Vector vectorNew(double pDoubleA, double pDoubleB, double pDoubleC);
-     
+
     /**
      * vectorAdd
      * Takes in two vectors and returns the sum of those vectors
@@ -79,8 +79,8 @@ extern "C" {
     Vector vectorCrossProduct(Vector pVectorA, Vector pVectorB);
 
     Vector vectorDotProduct(Vector pVectorA, Vector pVectorB);
-    
-   
+
+
 
 
 #ifdef	__cplusplus
