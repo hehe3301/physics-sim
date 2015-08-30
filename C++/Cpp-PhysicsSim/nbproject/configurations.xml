@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>GravityObject.h</itemPath>
       <itemPath>vector.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -13,6 +14,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>GravityObject.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>vector.c</itemPath>
     </logicalFolder>
@@ -38,6 +40,10 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="GravityObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GravityObject.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="vector.c" ex="false" tool="0" flavor2="0">
@@ -65,6 +71,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="GravityObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GravityObject.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="vector.c" ex="false" tool="0" flavor2="0">
