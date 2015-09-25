@@ -26,6 +26,7 @@ public:
     
 private:
     const char * mObjName;
+    ObjectManager * mpObjectManager;
     Vector * mCurrentPos;
     Vector * mNextPos;
     Vector * mCurrentVel;

@@ -12,8 +12,9 @@ class ObjectManager {
 public:
     ObjectManager * Instance();
     void InstanceExit();
+    int mObjCount;
 private:
-    int objCount;
+    
     ObjectManager * mpObjectManager;
     ObjectManager();
     ObjectManager(const ObjectManager& orig);

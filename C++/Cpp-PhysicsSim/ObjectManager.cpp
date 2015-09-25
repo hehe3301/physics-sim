@@ -7,6 +7,21 @@
 
 #include "ObjectManager.h"
 
+/*
+ * Public Functions
+ */
+    ObjectManager * Instance(){
+        mObjCount++;
+    }
+    
+    void InstanceExit(){
+        mObjCount--;
+    }
+
+
+/*
+ * Private Functions
+ */
 ObjectManager::ObjectManager() {
 }
 
