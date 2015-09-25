@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>GravityObject.h</itemPath>
+      <itemPath>ObjectManager.h</itemPath>
       <itemPath>vector.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -15,6 +16,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>GravityObject.cpp</itemPath>
+      <itemPath>ObjectManager.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>vector.c</itemPath>
     </logicalFolder>
@@ -43,6 +45,10 @@
       <item path="GravityObject.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GravityObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ObjectManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ObjectManager.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -74,6 +80,10 @@
       <item path="GravityObject.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GravityObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ObjectManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ObjectManager.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

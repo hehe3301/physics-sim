@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/GravityObject.o \
+	${OBJECTDIR}/ObjectManager.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/vector.o
 
@@ -68,6 +69,11 @@ ${OBJECTDIR}/GravityObject.o: GravityObject.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GravityObject.o GravityObject.cpp
+
+${OBJECTDIR}/ObjectManager.o: ObjectManager.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ObjectManager.o ObjectManager.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

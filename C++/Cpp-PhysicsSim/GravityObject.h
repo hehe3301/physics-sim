@@ -1,6 +1,6 @@
 /* 
  * File:   GravityObject.h
- * Author: Alex
+ * Author: Alexander Habermann
  *
  * Created on August 30, 2015, 12:59 PM
  */
@@ -12,11 +12,17 @@ class GravityObject {
     
 public:
     GravityObject();
-    GravityObject( char * pmObjName);
+    GravityObject(char * pmObjName);
     GravityObject(const GravityObject& orig);
     virtual ~GravityObject();
-    void Update();
-    enum ObjectState:int { PREP, READY_TO_TICK, TICK, CLEANUP };
+    bool Update();
+    enum GravObjectState:int {  INIT,
+                                PREP_TO_TICK, 
+                                READY_TO_TICK, 
+                                TICK, 
+                                CLEANUP,
+                                ERROR };
+    GravObjectState mObjState;
     
 private:
     const char * mObjName;
@@ -29,9 +35,9 @@ private:
     double mMass;
     double mRadus;
 
-    void PrepToTick();
-    void Tick();
-    void Cleanup();
+    bool PrepToTick();
+    bool Tick();
+    bool Cleanup();
     
 };
 
