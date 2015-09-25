@@ -9,7 +9,16 @@
 #define	GRAVITYOBJECT_H
 
 class GravityObject {
+    
 public:
+    GravityObject();
+    GravityObject( char * pmObjName);
+    GravityObject(const GravityObject& orig);
+    virtual ~GravityObject();
+    void Update();
+    enum ObjectState:int { PREP, READY_TO_TICK, TICK, CLEANUP };
+    
+private:
     const char * mObjName;
     Vector * mCurrentPos;
     Vector * mNextPos;
@@ -19,18 +28,11 @@ public:
     Vector * mCurrentForce;
     double mMass;
     double mRadus;
-    
-    
-    
-    GravityObject();
-    GravityObject( char * pmObjName);
-    GravityObject(const GravityObject& orig);
-    virtual ~GravityObject();
-    void Tick();
-private:
-    
-    
 
+    void PrepToTick();
+    void Tick();
+    void Cleanup();
+    
 };
 
 #endif	/* GRAVITYOBJECT_H */
